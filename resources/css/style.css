@@ -1,0 +1,264 @@
+/* "Tamming" Box Model With Reset */
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Universal Styles */
+
+
+body {
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 470px) {
+  p {
+    font-size: 0.77rem;
+}
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  text-transform: uppercase;
+}
+
+.banner-content {
+
+  margin-top: 10rem;
+  margin-right: -2rem;
+  justify-content: flex-end;
+  display: flex;
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+
+  .banner-content {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+}
+
+
+@media only screen and (max-width: 470px) {
+  h1 {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.banner-content {
+  margin: 8rem 0 0 0;
+}
+}
+
+
+h2 {
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  width: 11rem;
+
+}
+
+@media only screen and (max-width: 470px) {
+  h2 {
+    width: 100%;
+}
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+/* Header Styles */
+
+header {
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    padding: 0;
+    height: 22rem;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header {
+    height: 17rem;
+    background-position: 17%;
+}
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+}
+
+nav img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+  ul li {
+    display: inline;
+    padding: 0 1rem;
+}
+
+nav .mobile {
+ display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  ul li {
+ display: none;
+}
+
+nav .mobile {
+  display: block;
+}
+
+.logo span {
+  display: none;
+}
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+
+/* USP Styles */
+
+.usp {
+  display: flex;
+  justify-content: center;
+}
+
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+  text-align: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 470px) {
+  .item {
+    margin: 1.54rem 0;
+}
+
+.usp {
+  margin: 3.77rem 0 0 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+
+}
+
+.item span {
+  font-size: 0.77rem;
+
+}
+}
+
+.usp img {
+  max-width: 3.5rem;
+  max-height: auto;
+}
+
+/* Support Styles */
+
+.info {
+  width: 35%;
+  margin-left: 5%;
+}
+
+.support {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 470px) {
+ .info {
+ width: 100%;
+ margin: 0 0 4rem 0;
+}
+
+ .support {
+  display: block;
+}
+}
+
+
+/* Footer Styles */
+
+footer {
+  background-color: azure;
+  margin-top: 5rem;
+  padding: 4rem 0 4rem 4rem;
+  display: flex;
+  align-items: center;
+}
+
+  footer img {
+    height: 1.5rem;
+    padding-right: 1rem;
+  }
+
+  @media only screen and (max-width: 470px) {
+    footer span {
+      display: none;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+  }
+  }
